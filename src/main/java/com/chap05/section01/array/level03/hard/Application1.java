@@ -26,7 +26,7 @@ public class Application1 {
             }
         }
 
-        System.out.print("\b");
+        System.out.print('\b');
 
     }
 

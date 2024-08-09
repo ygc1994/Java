@@ -30,7 +30,7 @@ public class Application2 {
             System.out.println("파일 복사가 성공적으로 완료 되었습니다.");
 
         } catch (IOException e) {
-            System.out.println("오류 : " + str1 + " (지정된 파일을 찾을 수 없습니다)");
+            System.out.println("오류 : " + e.getMessage());
         }
 
     }

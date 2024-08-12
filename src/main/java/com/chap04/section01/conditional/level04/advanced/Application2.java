@@ -12,8 +12,7 @@ public class Application2 {
         System.out.print("매출액 입력 : ");
         int sale = sc.nextInt();
 
-        double br = 0;
-        int bouns = 0;
+        double br = 0.0;
         int ts = 0;
 
         if(sale >= 50000000) {

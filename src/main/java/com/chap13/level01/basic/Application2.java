@@ -10,17 +10,17 @@ public class Application2 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         LinkedList<String> urls = new LinkedList<>();
-        String url = "";
+        String str = "";
 
-        while(!url.equals("exit")) {
+        while(!str.equals("exit")) {
             System.out.print("방문 URL을 입력하세요 (단, exit를 입력하면 종료) : ");
-            url = br.readLine();
+            str = br.readLine();
 
-            urls.addFirst(url);
+            urls.addFirst(str);
 
             if(urls.size() > 5) urls.remove(5);
 
-            if(!url.equals("exit")) System.out.println("최근 방문 url : " + urls);
+            if(!str.equals("exit")) System.out.println("최근 방문 url : " + urls);
         }
 
     }

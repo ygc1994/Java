@@ -33,9 +33,7 @@ public class Application1 {
                         .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::
                                 getSalary)));
 
-        System.out.print("\"");
         System.out.print(allNames); // 출력 예시: "홍길동, 김철수, 이영희, 박민수, 최지현, 한석봉"
-        System.out.println("\"");
         System.out.println(highSalaryIT); // 출력 예시: [이영희, 홍길동, 한석봉]
         System.out.println(averageSalaryByDept); // 출력 예시: {HR=3250.0, IT=6000.0, 영업=4000.0}
     }

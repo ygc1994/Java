@@ -10,15 +10,12 @@ public class Application2 {
         System.out.print("문자열 입력 : ");
         String str = sc.nextLine();
 
-        String[] strarr = new String[] {};
-        String[] worarr;
+        String[] strarr = str.toLowerCase().replaceAll("[^a-z+]", " ").split("\\s+");
+        String[] worarr = new String[strarr.length];
         String mfword = "";
         int count = 0;
         int num = 0;
         int temp = 0;
-
-        strarr = str.toLowerCase().replaceAll("[^a-z]+", " ").split("\\s+");
-        worarr = new String[strarr.length];
 
         label:
         for (int i = 0; i < strarr.length; i++) {
@@ -26,7 +23,8 @@ public class Application2 {
                 if(strarr[i].equals(worarr[j])) continue label;
             }
 
-            worarr[num++] = strarr[i];
+            worarr[num] = strarr[i];
+            num++;
             temp = 0;
 
             for (int k = i; k < strarr.length; k++) {
